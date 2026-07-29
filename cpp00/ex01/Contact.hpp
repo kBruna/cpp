@@ -13,6 +13,19 @@ class	Contact
 		std::string _darkestSecret;
 
 	public:
-}
+		//Setter
+		void	setFirstName(std::string firstName);
+		void	setLastName(std::string lastName);
+		void	setNickname(std::string nickName);
+		void	setPhoneNumber(std::string number);
+		void	setDarkestSecret(std::string secret);
+
+		//Getter
+		std::string	getFirstName() const;
+		std::string getLastName() const;
+		std::string	getNickname() const;
+		std::string	getPhoneNumber() const;
+		std::string	getDarkestSecret() const;
+};
 
 #endif
