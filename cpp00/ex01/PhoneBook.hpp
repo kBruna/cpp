@@ -7,8 +7,9 @@ chass PhoneBook
 {
 	private:
 		Contact _contact[8];
-
 	public:
+		PhoneBook();
+		~PhoneBook();
 };
 
 #endif
