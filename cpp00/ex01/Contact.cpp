@@ -50,13 +50,12 @@ std::string	Contact::getDarkestSecret() const
 	return _darkestSecret;
 }
 
+Contact::Contact() {}
+
 Contact::Contact(std::string firstName, std::string lastName,
-	std::string nickname, std::string phoneNumber, std::string darkSecret)
-	:	_firstName(firstName),
-		_lastName(lastName),
-		_nickname(nickname),
-		_phoneNumber(phoneNumber),
-		_darkestSecret(darkSecret)
-{}
+		std::string phoneNumber, std::string nickName, std::string darkSecret)
+	: _firstName(firstName), _lastName(lastName), _nickname(nickName),
+		_phoneNumber(phoneNumber), _darkestSecret(darkSecret)
+	{}
 
 Contact::~Contact() {}

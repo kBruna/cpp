@@ -3,7 +3,8 @@ CPP		= c++
 CFLAGS	= -Wall -Werror -Wextra --std=c++98
 
 SRCS =	Contact.cpp	\
-		PhoneBook.cpp
+		PhoneBook.cpp	\
+		main.cpp
 
 OBJ_DIR = obj
 
