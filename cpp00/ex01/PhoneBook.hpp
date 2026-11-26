@@ -15,7 +15,10 @@ class PhoneBook
 	public:
 		PhoneBook();
 		~PhoneBook();
-		void addContact(Contact contact);
+		int			getIndex();
+		void		addContact(Contact contact);
+		void		printContact(int index);
+		std::string	formatString(std::string);
 };
 
 #endif

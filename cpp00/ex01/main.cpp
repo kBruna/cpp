@@ -61,7 +61,7 @@ int	main()
 	std::cout << "This program accepts three commands:" << std::endl;
 	do
 	{
-		if (user_input.empty())
+		if (user_input.empty() || (user_input != "ADD" && user_input != "SEARCH"))
 			std::cout << "Invalid command." << std::endl;
 		ft_cmd_list();
 		std::getline(std::cin, user_input);
@@ -77,12 +77,14 @@ int	main()
 		}
 		else if (user_input == "SEARCH")
 		{
-			std::cout << "Index" << std::setw(6) << "|"
-				<< "First Name" << "|"
-				<< "Last Name" << std::setw(2) << "|"
-				<< "Nickname" << std::setw(3) << "|" << std::endl;
-			for (int i = 0; i < 4; i++) {
-			}
+			std::cout << std::setw(10) << "Index" << "|"
+				<< std::setw(10) << "First Name" << "|"
+				<< std::setw(10) << "Last Name" << "|"
+				<< std::setw(10) << "Nickname" << "|" << std::endl;
+			for (int i = 0; i < 4; i++)
+				phonebook.printContact(i);
+			std::cout << "Select Contact Index:" << std::endl;
+			//std::getline(std::cin, index);
 		}
 	} while (user_input != "EXIT");
 	phonebook.~PhoneBook();
